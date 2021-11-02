@@ -26,7 +26,16 @@ input.onButtonPressed(Button.B, function () {
 })
 function カタパルト発射 () {
     radio.setGroup(1)
+    basic.showLeds(`
+        . . # . .
+        . . # . .
+        . . # . .
+        . . . . .
+        . . # . .
+        `)
     radio.sendString("Fire")
+    basic.pause(1000)
+    表示設定(1)
 }
 function 表示設定 (数値: number) {
     if (数値 == 1) {
