@@ -42,7 +42,7 @@ function 表示設定 (数値: number) {
         basic.showIcon(IconNames.Yes)
     }
 }
-let 無線グループ = 1
+let 無線グループ = 128
 radio.setGroup(無線グループ)
 led.setBrightness(128)
 表示設定(1)
